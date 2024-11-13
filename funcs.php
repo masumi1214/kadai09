@@ -7,10 +7,10 @@ function h($str){
 //DB接続関数：db_conn()
 function db_conn(){
     try {
-        $db_name = 'masumi1214_gs_kadai09';     // データベース名
-        $db_host = 'mysql3101.db.sakura.ne.jp'; // DBホスト
-        $db_id   = 'masumi1214_gs_kadai09';     // ユーザー名
-        $db_pw   = 'mieko0623'; 
+        $db_name = '';     // データベース名
+        $db_host = ''; // DBホスト
+        $db_id   = '';     // ユーザー名
+        $db_pw   = ''; 
         return new PDO('mysql:dbname='.$db_name.';charset=utf8;host='.$db_host, $db_id, $db_pw);
     } catch (PDOException $e) {
         exit('DB Connection Error:'.$e->getMessage());
